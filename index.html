@@ -7,7 +7,36 @@
 </head>
 <body>
     <script>
-        
+		var title = "Titanic";
+		var date = "1997";
+		var name = prompt("¿Cual es tu nombre?");
+		alert("Hola " + name);
+		var age = prompt("¿Cuantos años tenes " + name +" ?");
+		if (age < 18){
+			alert("No puedes ingresar si sos menor de edad");
+		}
+		else{
+			alert("Bienvenido al juego " + name + " de " + age + " años de edad");
+			var score = 0;
+			var movie = prompt("¿En que pelicula un barco se estrella con un iceberg?");
+			if (movie == title){
+				alert("La respuesta es correcta! Sumaste un punto");
+				score = score + 1;
+			}
+			else{
+				alert("Tu respuesta es incorrecta. No sumas ningun punto");
+			}
+			alert("Siguiente pregunta");
+			var movieDate = prompt("¿En que año se estreno Titanic?");
+			if (movieDate == date){
+				alert("La respuesta es correcta! Sumaste un punto");
+				score = score + 1;
+			}
+			else{
+				alert("Tu respuesta es incorrecta. No sumas ningun punto");
+			}
+			alert("Tu puntacion final es " + score + " .Gracias por jugar");
+		}
     </script>
 </body>
 </html>
